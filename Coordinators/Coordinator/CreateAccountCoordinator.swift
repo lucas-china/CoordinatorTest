@@ -22,4 +22,10 @@ class CreateAccountCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
+    
+    func welcomeSubscription(name: String?) {
+        let vc = WelcomeViewController.instantiate()
+        vc.name = name
+        navigationController.pushViewController(vc, animated: true)
+    }
 }

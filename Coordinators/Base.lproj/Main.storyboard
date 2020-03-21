@@ -75,7 +75,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="3zp-o0-M2L">
             <objects>
-                <viewController id="TC8-2o-Cgv" customClass="WelcomeViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="TC8-2o-Cgv" customClass="WelcomeViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wec-zd-PCy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

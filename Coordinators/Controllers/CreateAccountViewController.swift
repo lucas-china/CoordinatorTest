@@ -21,6 +21,7 @@ class CreateAccountViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func tapCreate(_ sender: UIButton) {
+        coordinator?.welcomeSubscription(name: nameTextField.text)
     }
     
 }
