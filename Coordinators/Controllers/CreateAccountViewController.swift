@@ -14,7 +14,7 @@ class CreateAccountViewController: UIViewController, Storyboarded {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: CreateAccountCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
