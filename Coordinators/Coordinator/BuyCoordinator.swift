@@ -1,15 +1,15 @@
 //
-//  MainCoordinator.swift
+//  BuyCoordinator.swift
 //  Coordinators
 //
 //  Created by Lucas Santana Brito on 21/03/20.
 //  Copyright © 2020 lsb. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class MainCoordinator: Coordinator {
+class BuyCoordinator: Coordinator {
+    weak var parentCoordinator: MainCoordinator?
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -18,20 +18,12 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let vc = ViewController.instantiate()
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
-    }
-    
-    func buySubscription() {
         let vc = BuyViewController.instantiate()
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func createAccountSubscription() {
-        let vc = CreateAccountViewController.instantiate()
-        vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
-    }
+//    func didFinishBuying() {
+//        parentCoordinator?.childDidFinish(self)
+//    }
 }
