@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="977" y="-143"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="3zp-o0-M2L">
             <objects>
-                <viewController id="TC8-2o-Cgv" sceneMemberID="viewController">
+                <viewController id="TC8-2o-Cgv" customClass="WelcomeViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wec-zd-PCy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,6 +94,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JZC-Ue-xyh"/>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="NAN-oE-0dx" id="kAK-fM-nKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsS-8o-y1A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +134,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3L-Ko-OcC">
                                 <rect key="frame" x="185" y="712" width="44" height="30"/>
                                 <state key="normal" title="create"/>
+                                <connections>
+                                    <action selector="tapCreate:" destination="JUe-ng-Vf0" eventType="touchUpInside" id="Lnz-uA-tvH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -146,6 +152,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6sW-Cr-rNo"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="tcZ-UM-oZ3" id="ORb-Ui-hFZ"/>
+                        <outlet property="passwordTextField" destination="Ns5-6I-sML" id="S4f-hQ-ZAh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J6E-lR-Th7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
